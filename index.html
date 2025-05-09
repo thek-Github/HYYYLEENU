@@ -114,16 +114,6 @@
     </div>
   </div>
 
-  <div class="love-box hidden" id="marryBox">
-    <h1>Yayyy! 💞</h1>
-    <p>Okay... one more thing 😳</p>
-    <p>Would you marry me? 💍</p>
-    <div class="btns">
-      <button class="btn" onclick="acceptMarry()">Yes 💍</button>
-      <button class="btn" id="noBtn2">No 🙅‍♀️</button>
-    </div>
-  </div>
-
   <div class="love-box hidden" id="finalBox">
     <h1>THANK YOUUUU 💘</h1>
     <p>You made me the happiest person alive! 💍💖</p>
@@ -138,11 +128,6 @@
 
     function acceptDate() {
       document.getElementById('loveBox').classList.add('hidden');
-      document.getElementById('marryBox').classList.remove('hidden');
-    }
-
-    function acceptMarry() {
-      document.getElementById('marryBox').classList.add('hidden');
       document.getElementById('finalBox').classList.remove('hidden');
     }
 
@@ -163,11 +148,6 @@
 
     document.getElementById('noBtn').addEventListener('mouseenter', () => dodge('noBtn'));
     document.getElementById('noBtn').addEventListener('mousemove', () => dodge('noBtn'));
-
-    const noBtn2 = document.getElementById('noBtn2');
-['mouseenter', 'mousemove', 'mouseover', 'mousedown'].forEach(evt => {
-  noBtn2.addEventListener(evt, () => dodge('noBtn2'));
-});
   </script>
 </body>
 </html>
